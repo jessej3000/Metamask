@@ -30,7 +30,7 @@ export default function Home() {
       setBlockNumber(blockNum);
      
       const usdtContractAddress = '0xdAC17F958D2ee523a2206206994597C13D831ec7';
-      const usdtBalance = await web3Provider.getBalance(usdtContractAddress, address);
+      const usdtBalance = await web3Provider.getBalance(usdtContractAddress);
       setUsdtBalance(usdtBalance.toString());
     } catch (error) {
       console.error("Cannot connect to wallet:", error);
